@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concert</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="row toprow">
+				<div class="col-sm-4"><%= image_tag "music_heart.jpg", class: "image" %>
+				</div>
+				<div class="col-sm-4"><h1 class="headline">Buddylove's Concert List</h1>
+					<a href="http://localhost:3000/"><button class="btn btn-primary">Add Concerts</button></a> 
+					<a href="http://localhost:3000/kisses/index"><button class="btn btn-info">Concerts</button></a>
+					<a href=""><button class="btn btn-info">Upcoming Concerts</button></a>
+				</div>
+				<div class="col-sm-4">	
+					<input type="text" class="searchbar">
+					<button class="btn btn-danger danger">Search</button>
+				</div>
+			</div>
+		</nav>
+		<div class="row body">
+			<div class="col-sm-4">
+<%= yield %>
+			</div>
+			<div class="col-sm-8">
+				
+			</div>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar-default navbar-static-bottom">
+				<div class="col-sm-12"></div>
+			</nav>
+			
+		</div>
+	</div>
+</body>
+</html>
