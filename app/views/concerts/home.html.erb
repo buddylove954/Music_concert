@@ -1,23 +1,32 @@
+<div class="addform">
 <h1>Add a concert</h1>
 <%= form_for @concert do |f| %>
-<%= f.label :artist %>
-<% f.text_field :artist %>
-<br>
-<%= f.label :date %>
-<%= f.date_field :date %>
-<br>
-<%= f.label :venue %>
-<%= f.text_field :venue %>
-<br>
-<%= f.label :city %>
-<%= f.text_field :city %>
-<br>
-<%= f.label :ticket_price %>
-<%= f.text_field :ticket_price %>
-<br>
-<%= f.label :description %>
-<%= f.text_field :description %>
-<br>
-
-<button class="btn btn-danger"><% f.submit "Create" %>Create</button>
+	<%= f.label :artist %>
+	<div class="textfield">
+	<%= f.text_field :artist %>
+	</div>
+	<%= f.label :date %>
+	<div class="textfield">
+	<%= f.date_field :date %>
+</div>
+	<%= f.label :venue %>
+	<div class="textfield">
+	<%= f.text_field :venue %>
+</div>
+	<%= f.label :city %>
+	<div class="textfield">
+	<%= f.text_field :city %>
+</div>
+	<%= f.label :ticket_price %>
+	<div class="textfield">
+	<%= f.text_field :ticket_price %>
+</div>
+	<%= f.label :description %>
+	<div class="textfield">
+	<%= f.text_field :description %>
+</div>
+<button class="btn btn-danger formb"><% f.submit "Create" %>Create</button>
 <% end %>
+<%= image_tag "ultra.jpg", class: "image_ultra" %>
+</div>
+

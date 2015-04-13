@@ -1,11 +1,14 @@
 <% @concert.each do |con| %>
-  <div>
- 	<h3>Artist: <%= con.artist %></h3>
-	<p>Date: <strong><%= con.date %></strong></p>
-	<h5>Venue: <strong><%= con.venue %></strong></h5>
-	<h5>City: <strong><%= con.city %></strong></h5>
-	<p>Price: <strong><%= con.ticket_price %></strong></p>
-	<p>Description: <strong><%= con.description %></strong></p>	
+  <div class="lists">
+ 	<h2 class="head2"><%= con.artist %></h2>
+ 	<ul>
+	<li>Date: <strong><%= con.date %></strong></li>
+	<li>Venue: <strong><%= con.venue %></strong></li>
+	<li>City: <strong><%= con.city %></strong></li>
+	<li>Price: <strong><%= con.ticket_price %></strong></li>
+	<li>Description: <strong><%= con.description %></strong></li>
+	</ul>	
   </div>
   <p></p>
 <% end %>
+

@@ -15,27 +15,33 @@
 				<div class="col-sm-4"><h1 class="headline">Buddylove's Concert List</h1>
 					<a href="http://localhost:3000/"><button class="btn btn-primary">Add Concerts</button></a> 
 					<a href="http://localhost:3000/kisses/index"><button class="btn btn-info">Concerts</button></a>
-					<a href=""><button class="btn btn-info">Upcoming Concerts</button></a>
+					<a href="http://localhost:3000/kisses/week"><button class="btn btn-info">Upcoming Concerts</button></a>
 				</div>
-				<div class="col-sm-4">	
+				<div class="col-sm-4 search-top">	
 					<input type="text" class="searchbar">
 					<button class="btn btn-danger danger">Search</button>
 				</div>
 			</div>
 		</nav>
 		<div class="row body">
-			<div class="col-sm-4">
+			<div class="col-sm-10">
 <%= yield %>
 			</div>
-			<div class="col-sm-8">
-				
+			<div class="col-sm-2">
+				<div class="sidebar">
+					<h2 class="sideh2">Today's concerts</h2>
+				<% @now.each do |con| %>
+				<h4 class="sidehead"><%= con.artist %></h4>
+				<h5 class="dateside"><strong><%= con.date %></strong></h5>
+				<ul>
+				<li><%= con.venue %></li>
+				<li><%= con.city %></li>
+				<li><%= con.ticket_price %></li>
+				<button class="btn btn-danger btn-sm">Buy Tickets</button>
+				</ul>
+				<% end %>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<nav class="navbar navbar-default navbar-static-bottom">
-				<div class="col-sm-12"></div>
-			</nav>
-			
 		</div>
 	</div>
 </body>

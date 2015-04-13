@@ -20,6 +20,10 @@
 	border-radius: 20%;
 }
 
+.head2 {
+	text-align: center;
+	color: #A80000;
+}
 
 .toprow {
 	background-color: lightgrey;
@@ -42,4 +46,70 @@ body {
 
 .searchbar {
 	margin-left: 178px;
+}
+
+.lists {
+	float: left;
+	margin: 15px;
+	border-radius: 10%;
+	border-style: solid;
+	border-color: #5bc0de;
+	padding: 10px;
+}
+
+.navbar-static-bottom {
+	margin-bottom: -100px;
+	background-color: lightgrey;
+}
+
+.sidebar {
+	margin: 8px;
+	border: 2px solid grey;
+	border-radius: 15%;
+}
+
+.sidehead {
+	text-align: center;
+	color: #A80000 ;
+	font-family: italic;
+}
+
+.dateside {
+	text-align: center;
+	color: #A80000;	
+}
+
+.btn-sm {
+	margin-top: 5px;
+}
+
+.search-top {
+	margin-top: 60px;
+}
+
+.sideh2 {
+	text-align: center;
+	font-family: italic;
+	color: #428bca;
+}
+
+.addform {
+	margin: 10px;
+	font-family: times;
+}
+
+.formb {
+	margin-left: 90px;
+	margin-top: 10px;
+}
+
+.textfield {
+	margin-left: 10px;
+}
+
+.image_ultra {
+	float: right;
+	margin-top: -400px;
+	margin-right: 100px;
+	border-radius: 20%;
 }

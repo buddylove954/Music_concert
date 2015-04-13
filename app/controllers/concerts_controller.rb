@@ -1,6 +1,7 @@
 class ConcertsController < ApplicationController
 	def new
 		@concert = Kiss.new
+		@now = Kiss.todays_concerts
 		render 'home'
 	end
 
@@ -12,7 +13,14 @@ class ConcertsController < ApplicationController
 
 	def index
 		@concert = Kiss.all
+		@now = Kiss.todays_concerts
 		render 'concert'
+	end
+
+	def week
+		@concert = Kiss.weeks_concerts
+		@now = Kiss.todays_concerts
+		render 'week'
 	end
 
 	private
